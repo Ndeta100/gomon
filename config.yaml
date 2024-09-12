@@ -1,0 +1,25 @@
+
+watch_file_types: 
+  - "*.go"
+  - "*.html"
+include_paths:
+  - "./src"
+  - "./templates"
+exclude_paths:
+  - "./vendor"
+  - "./build"
+commands:
+  - command: "go build"
+    args: ["-o", "bin/app"]
+  - command: "./bin/app"
+    args: []
+delay: 1000            # Delay in ms
+log_level: "info"      # Logging level: debug, info, warn, error
+debounce: true         # Avoid rapid multiple restarts
+notify_on_change: true # Log when file changes are detected
+pre_commands:
+  - command: "echo"
+    args: ["Running pre-build commands..."]
+post_commands:
+  - command: "echo"
+    args: ["App restarted successfully!"]
