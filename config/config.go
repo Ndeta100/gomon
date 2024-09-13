@@ -36,7 +36,7 @@ func CreateDefaultConfig(yamlFilename string) Config {
 			{Command: "go build", Args: []string{"-o", "bin/app"}},
 			{Command: "./bin/app", Args: []string{}},
 		},
-		Delay:          1000,
+		Delay:          500,
 		LogLevel:       "info",
 		Debounce:       true,
 		NotifyOnChange: true,
@@ -64,6 +64,7 @@ func CreateDefaultConfig(yamlFilename string) Config {
 }
 
 //func CreateDefaultConfig(filePath string) {
+//fffffff
 //	defaultConfig := `
 //watch_file_types:
 //  - "*.go"
