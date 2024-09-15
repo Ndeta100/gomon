@@ -64,7 +64,6 @@ func CreateDefaultConfig(yamlFilename string) Config {
 }
 
 //func CreateDefaultConfig(filePath string) {
-//fffffff
 //	defaultConfig := `
 //watch_file_types:
 //  - "*.go"
